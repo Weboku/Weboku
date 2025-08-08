@@ -1,0 +1,155 @@
+.clean-header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white;
+  box-shadow: 0 0 0 transparent;
+  transition: 0.3s ease all;
+  padding: 1.6rem 8.5rem;
+}
+
+.clean-header.scrolled {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.nav-links span {
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-links span.active::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: var(--primary-color);
+  bottom: -4px;
+  left: 0;
+}
+
+.right-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.call-now-btn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.4rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.call-now-btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--text-dark);
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Mobile drawer */
+.mobile-drawer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2rem;
+  transition: right 0.3s ease;
+  z-index: 999;
+}
+
+.mobile-drawer.open {
+  right: 0;
+}
+
+.drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.close-icon {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.drawer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  margin-top: 2rem;
+}
+
+.drawer-links span {
+  font-size: 1.6rem;
+  color: var(--text-dark);
+  cursor: pointer;
+}
+
+.drawer-call-btn {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.8rem;
+  font-size: 1.5rem;
+  border-radius: 6px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.drawer-call-btn:hover {
+  background: var(--secondary-color);
+  color: var(--text-dark);
+}
+
+@media (max-width: 1024px) {
+  .nav-links {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}

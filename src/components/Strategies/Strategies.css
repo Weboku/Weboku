@@ -1,0 +1,136 @@
+.strategies-modern {
+  padding: 40px 60px;
+  background: var(--light-bg);
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--text-dark);
+}
+
+.strategies-modern-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+.strategies-modern-header h2 {
+  font-size: 34px;
+  font-weight: 700;
+    background: linear-gradient(to right, #1e40af, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* color: var(--primary-color); */
+  margin-bottom: 16px;
+}
+
+.strategies-modern-header p {
+  font-size: 16.5px;
+  color: #4b5563;
+  line-height: 1.7;
+}
+
+.strategies-modern-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 32px;
+}
+
+.strategy-modern-card {
+  background-color: white;
+  border-radius: 18px;
+  padding: 32px 24px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e5e7eb;
+}
+
+.strategy-modern-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  border-color: var(--primary-color);
+}
+
+.strategy-icon-ring {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 20px;
+}
+
+.strategy-modern-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+}
+
+.strategy-modern-card p {
+  font-size: 14.5px;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .strategies-modern {
+    padding: 60px 20px;
+  }
+
+  .strategies-modern-header h2 {
+    font-size: 26px;
+  }
+}
+
+.strategy-modern-card-alt {
+  border-radius: 22px;
+  padding: 32px 24px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.04);
+}
+
+.strategy-modern-card-alt:hover {
+  transform: translateY(-6px);
+}
+
+.strategy-icon-glow {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.strategy-modern-card-alt h3 {
+  font-size: 18.5px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+.strategy-modern-card-alt p {
+  font-size: 15.2px;
+  color: #334155;
+  line-height: 1.6;
+}
+
+.strategies-modern-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+}
+
+
+.strategy-modern-card-alt:hover {
+  transform: translateY(-10px);
+}
