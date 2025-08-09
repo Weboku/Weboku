@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+Weboku – Digital Marketing Agency Website (React + Firebase)
+Weboku is a modern, fully responsive digital marketing agency website built using React.js and Firebase. It is designed to help agencies showcase their services, highlight achievements, share insights via a blog, and capture leads through an integrated contact form. The project focuses on clean design, smooth animations, and SEO-friendly structure to ensure both aesthetics and performance.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+Responsive Design – Optimized for desktop, tablet, and mobile devices.
 
-## Available Scripts
+Service Showcase – Dedicated sections to present services with clear CTAs.
 
-In the project directory, you can run:
+Dynamic Content – Firebase Firestore integration for storing and managing inquiries.
 
-### `npm start`
+Contact Form – Real-time form submission with data stored in Firestore.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Modern Animations – Smooth transitions using Framer Motion for an engaging user experience.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Blog Page – Share marketing tips, updates, and case studies with dynamic blog content.
 
-### `npm test`
+SEO Optimized – Proper meta tags, structured headings, and semantic HTML.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Tech Stack
+Frontend: React.js, CSS3, React Router, Framer Motion
 
-### `npm run build`
+Backend: Firebase Firestore
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Hosting: Firebase Hosting
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Other Tools: Axios, Google Fonts
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Project Structure
+Home Page: Hero banner, services overview, and agency introduction.
 
-### `npm run eject`
+About Page: Company vision, achievements, and team highlights.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Services Page: Detailed service descriptions and marketing solutions.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Blog Page: Dynamic blog listings and individual post pages for sharing content.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contact Page: Interactive form linked with Firestore for instant data capture.
