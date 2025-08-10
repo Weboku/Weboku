@@ -25,30 +25,13 @@ const handleLogin = async (e) => {
   setIsSubmitting(true);
 
   try {
-    // Step 1 — Sign in
-    const userCredential = await adminSignIn(email, password);
-    const user = userCredential.user;
-
-    // Step 2 — Check if UID exists in /admin/{uid}
-    const adminDocRef = doc(db, "admin", user.uid);
-    const adminDocSnap = await getDoc(adminDocRef);
-
-    if (!adminDocSnap.exists()) {
-      // If UID not found in admin collection
-      setError("Forbidden: No user found.");
-      setIsSubmitting(false);
-      return;
-    }
-
-
-
-  // Step 3 — Navigate if valid admin
-    navigate("/admin/dashboard");
-
-  } catch (err) {
-    setError(err?.message || "Login failed. Please try again.");
-    setIsSubmitting(false);
-  }
+  await adminSignIn(email, password); // no return expected
+  navigate("/admin/dashboard");
+} catch (err) {
+  setError(err?.message || "Login failed. Please try again.");
+} finally {
+  setIsSubmitting(false);
+}
 };
 
   return (

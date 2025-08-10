@@ -86,25 +86,30 @@ export const AdminProvider = ({ children }) => {
     return unsub;
   }, []);
 
-  const adminSignIn = async (email, password) => {
-    const { user } = await signInWithEmailAndPassword(auth, email, password);
+ // in AdminContext
+const adminSignIn = async (email, password) => {
+  const cred = await signInWithEmailAndPassword(auth, email, password);
 
-    const ref = doc(db, "admin", user.uid);
-    const snap = await getDoc(ref);
-    if (!snap.exists()) throw new Error("Access denied");
+  const ref = doc(db, "admin", cred.user.uid);
+  const snap = await getDoc(ref);
+  if (!snap.exists()) {
+    await signOut(auth); // keep auth clean
+    throw new Error("Access denied");
+  }
 
-    const data = snap.data();
-    const adminData = buildAdminData(user.uid, data);
+  const data = snap.data();
+  const adminData = buildAdminData(cred.user.uid, data);
+  if (!isAllowedForPanel(adminData.role)) {
+    await signOut(auth);
+    throw new Error("Access denied");
+  }
 
-    if (!isAllowedForPanel(adminData.role)) {
-      throw new Error("Access denied");
-    }
+  setAdmin(adminData);
+  localStorage.setItem("admin_info", JSON.stringify(adminData));
+  await setPresence(cred.user.uid, "active");
+  toast.success("Login successful");
+};
 
-    setAdmin(adminData);
-    localStorage.setItem("admin_info", JSON.stringify(adminData));
-    await setPresence(user.uid, "active");
-    toast.success("Login successful");
-  };
 
 const adminLogout = async (navigate) => {
 try {
