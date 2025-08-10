@@ -11,7 +11,18 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "@tiptap/extension-color": "^3.0.9",
+    "@tiptap/extension-image": "^3.0.9",
+    "@tiptap/extension-link": "^3.0.9",
+    "@tiptap/extension-placeholder": "^3.0.9",
+    "@tiptap/extension-text-align": "^3.0.9",
+    "@tiptap/extension-text-style": "^3.0.9",
+    "@tiptap/extension-underline": "^3.0.9",
+    "@tiptap/react": "^3.0.9",
+    "@tiptap/starter-kit": "^3.0.9",
     "firebase": "^11.7.1",
+    "firebase-admin": "^12.5.0",
+    "firebase-functions": "^5.0.0",
     "framer-motion": "^12.18.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
@@ -27,7 +38,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "git": "git add -A && git commit -m 'update0307' && git push -u -f origin main",
+    "firebase": "npm run build && firebase deploy --only hosting"
   },
   "eslintConfig": {
     "extends": [

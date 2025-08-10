@@ -25,7 +25,7 @@ export const LocalProvider = ({ children }) => {
 
         if (docSnap.exists()) {
           const data = docSnap.data();
-          console.log("Fetched TFN:", data);
+          
 
           setCurrentTFN({
             intlFormat: data.numberIntl || "",

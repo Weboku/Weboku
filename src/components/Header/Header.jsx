@@ -30,13 +30,13 @@ const Header = () => {
         </div>
 
         <nav className="nav-links">
-          {['/', '/services', '/our-strategies','/about', '/contact'].map((path, i) => (
+          {['/', '/services', '/our-strategies','/blogs','/about', '/contact'].map((path, i) => (
             <span
               key={path}
               className={location.pathname === path ? 'active' : ''}
               onClick={() => handleNavigate(path)}
             >
-              {['Home', 'Services', 'Our Strategies', 'About', 'Contact Us'][i]}
+              {['Home', 'Services', 'Our Strategies','Blogs', 'About', 'Contact Us'][i]}
             </span>
           ))}
         </nav>
