@@ -86,7 +86,7 @@ export const AdminProvider = ({ children }) => {
     return unsub;
   }, []);
 
-  const adminSignIn = async (email, password, navigate) => {
+  const adminSignIn = async (email, password) => {
     const { user } = await signInWithEmailAndPassword(auth, email, password);
 
     const ref = doc(db, "admin", user.uid);
@@ -104,7 +104,6 @@ export const AdminProvider = ({ children }) => {
     localStorage.setItem("admin_info", JSON.stringify(adminData));
     await setPresence(user.uid, "active");
     toast.success("Login successful");
-    navigate("/admin/dashboard");
   };
 
 const adminLogout = async (navigate) => {
