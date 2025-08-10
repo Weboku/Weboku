@@ -39,8 +39,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "git": "git add -A && git commit -m 'update0307' && git push -u -f origin main",
-    "firebase": "npm run build && firebase deploy --only hosting"
+    "git": "npm run build && git add -A && git commit -m 'update1008' && git push -u -f origin main",
+    "firebase": "firebase deploy --only hosting"
   },
   "eslintConfig": {
     "extends": [
