@@ -111,7 +111,7 @@ const adminSignIn = async (email, password) => {
 };
 
 
-const adminLogout = async (navigate) => {
+const adminLogout = async () => {
 try {
   const uid = auth.currentUser?.uid;
   if (uid) await setPresence(uid, "inactive");
@@ -119,7 +119,6 @@ try {
   setAdmin(null);
   localStorage.removeItem("admin_info");
   toast.success("Logged out successfully");
-  if (navigate) navigate("/admin/login");
 } catch (e) {
   console.error(e);
   toast.error("Logout failed, please try again.");
