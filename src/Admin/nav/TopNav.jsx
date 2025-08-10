@@ -6,7 +6,7 @@ import { useAdminContext } from '../../context/AdminContext';
 const TopNav = () => {
   const [currentTime, setCurrentTime] = useState(new Date().toLocaleTimeString());
   const navigate = useNavigate();
-  const { admin, AdminLogout } = useAdminContext();
+  const { admin, adminLogout } = useAdminContext();
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -16,7 +16,7 @@ const TopNav = () => {
   }, []);
 
   const handleLogout = () => {
-    AdminLogout();
+    adminLogout();
     navigate('/admin/login');
   };
 
