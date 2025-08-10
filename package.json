@@ -26,6 +26,7 @@
     "framer-motion": "^12.18.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-helmet-async": "^2.0.5",
     "react-icons": "^5.5.0",
     "react-router-dom": "^7.5.0",
     "react-scripts": "5.0.1",
@@ -39,7 +40,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "git": "npm run build && git add -A && git commit -m 'update1008' && git push -u -f origin main",
+  "git": "npm run build && git add -A && git commit -m \"update1008 updated blogs and services\" && git push -u -f origin main",
     "firebase": "firebase deploy --only hosting"
   },
   "eslintConfig": {

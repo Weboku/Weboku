@@ -239,6 +239,49 @@ html {
 .btn[disabled] { opacity: .65; cursor: not-allowed; }
 
 
+/* Back tracker / breadcrumb */
+.post-breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+  margin: 1.2rem 0 1.6rem;
+}
+
+.back-chip {
+  background: #ffffff;
+  border: 0.1rem solid #e2e8f0;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5rem;
+  font-size: 1.3rem;
+  color: #0f172a;
+  cursor: pointer;
+  box-shadow: 0 0.2rem 0.8rem rgba(0,0,0,0.05);
+}
+.back-chip:hover { background: #f1f5f9; }
+
+.crumbs {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  font-size: 1.3rem;
+  color: #64748b;
+}
+.crumbs a {
+  color: #0f172a;
+  text-decoration: none;
+}
+.crumbs a:hover { text-decoration: underline; }
+.crumbs .current {
+  color: #94a3b8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 50vw;
+}
+
+
 /* body{
     width: 100%;
     background-color: var(--light-bg);

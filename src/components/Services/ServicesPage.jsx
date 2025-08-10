@@ -13,6 +13,21 @@ import {
   faGlobe,
   faUserPlus,
   faGaugeHigh,
+  faHandshake,
+  faStar,
+  faRocket,
+  faMobileAlt,
+  faPenNib,
+  faShareAlt,
+  faSearch,
+  faEnvelopeOpenText,
+  faUsers,
+  faChartBar,
+  faArrowTrendUp,
+  faMousePointer,
+  faTachometerAlt,
+  faLightbulb,
+  faProjectDiagram
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -184,18 +199,6 @@ const ServicesPage = () => {
     "Detailed monthly reporting and analytics dashboards.",
     "Audience persona building and behavior analysis."
   ],
-  subcategories: [
-    {
-      name: "Content Marketing",
-      route: "/services/digital/content-marketing",
-      img:"https://image.freepik.com/free-vector/content-marketing-vector-illustration_427922-312.jpg"
-    },
-    {
-      name: "Marketing Analytics",
-      route: "/services/digital/marketing-analytics",
-      img:"https://static.vecteezy.com/system/resources/previews/005/360/451/original/online-data-analysis-flat-illustration-of-data-analytics-vector.jpg"
-    }
-  ],
   testimonials: [
     {
       name: "Ankita S.",
@@ -245,6 +248,409 @@ const ServicesPage = () => {
     ]
   }
 },
+
+{
+  id: "brand-strategy",
+  title: "Brand Strategy",
+  description:
+    "Define your brand’s voice, vision, and value — and create a consistent identity that connects with your audience across every touchpoint.",
+  details:
+    "Your brand is more than a logo — it’s the story, promise, and perception you build in the minds of your audience. We help you articulate your purpose, position your business in the market, and craft a cohesive brand identity that stands out. From naming and messaging to design systems and brand guidelines, we ensure every element works together to strengthen trust, loyalty, and recognition.",
+  image:
+    "https://cdn3d.iconscout.com/3d/premium/thumb/brand-strategy-3d-illustration-download-in-png-blend-fbx-gltf-file-formats--branding-plan-logo-promotion-pack-marketing-illustrations-5510548.png",
+  features: [
+    "Comprehensive brand audits to assess strengths and gaps.",
+    "Clear positioning and messaging framework.",
+    "Unique visual identity including logo, color palette, and typography.",
+    "Brand voice guidelines for tone and communication style.",
+    "Market research and competitor analysis.",
+    "Launch strategy for brand rollout or rebranding."
+  ],
+  testimonials: [
+    {
+      name: "Neeraj K.",
+      feedback:
+        "They didn’t just design a logo — they built the backbone of our brand. Now everything we create feels connected and intentional."
+    },
+    {
+      name: "Ritu Sharma",
+      feedback:
+        "From our pitch deck to our website, the new brand identity elevated how clients perceive us. We’ve closed bigger deals since."
+    },
+    {
+      name: "Manoj Verma",
+      feedback:
+        "Our brand went from scattered to consistent. The guidelines they gave us are now our marketing bible."
+    }
+  ],
+  faqs: [
+    {
+      question: "Do you work on rebranding as well as new brands?",
+      answer:
+        "Yes — whether you’re building from scratch or refreshing an existing brand, we tailor the strategy to your needs."
+    },
+    {
+      question: "Will you provide brand guidelines?",
+      answer:
+        "Absolutely. Every project includes a comprehensive brand guideline document covering visual and verbal identity."
+    },
+    {
+      question: "Can you help align branding with marketing campaigns?",
+      answer:
+        "Yes — we ensure that the brand identity integrates seamlessly with your ongoing marketing and advertising efforts."
+    }
+  ],
+  growth: {
+    title: "Brand Strategy Impact Metrics",
+    chartData: [
+      { label: "Brand Recognition", value: 85 },
+      { label: "Customer Trust", value: 80 },
+      { label: "Market Differentiation", value: 78 },
+      { label: "Engagement Lift", value: 72 }
+    ],
+    highlights: [
+      { icon: faBullhorn, text: "2.5x increase in brand recall post-launch" },
+      { icon: faHandshake, text: "Higher client trust and repeat business" },
+      { icon: faStar, text: "Consistent identity across all customer touchpoints" }
+    ]
+  }
+},
+{
+  id: "web-development",
+  title: "Web Development",
+  description:
+    "Build high-performance, visually stunning websites that are optimized for user experience, conversions, and scalability.",
+  details:
+    "Your website is your digital storefront — and we make sure it’s built to impress and perform. From concept to launch, we design and develop websites that are fast, secure, mobile-responsive, and tailored to your brand’s goals. Whether it’s an informational site, eCommerce store, or custom web application, we combine design excellence with modern development standards to deliver a seamless online experience that drives results.",
+  image:
+    "https://cdni.iconscout.com/illustration/premium/thumb/web-development-4522877-3764936.png",
+  features: [
+    "Custom website design and development tailored to your brand.",
+    "Responsive layouts for flawless performance across all devices.",
+    "SEO-friendly architecture and clean code structure.",
+    "eCommerce solutions with secure payment integration.",
+    "Content management systems (CMS) like WordPress, Shopify, or custom builds.",
+    "Ongoing maintenance, updates, and performance optimization."
+  ],
+  testimonials: [
+    {
+      name: "Amit R.",
+      feedback:
+        "Our new website loads lightning fast and works perfectly on every device. It’s helped us convert more visitors into customers."
+    },
+    {
+      name: "Sana Mehra",
+      feedback:
+        "They turned our vision into reality. The site is beautiful, functional, and easy for our team to update."
+    },
+    {
+      name: "Karan Patel",
+      feedback:
+        "From the design to the backend, every detail was handled with care. Our bounce rate has dropped, and leads have gone up."
+    }
+  ],
+  faqs: [
+    {
+      question: "Do you handle both design and development?",
+      answer:
+        "Yes — we offer end-to-end website services including UI/UX design, development, testing, and deployment."
+    },
+    {
+      question: "Can you work with our existing website?",
+      answer:
+        "Absolutely — we can redesign, upgrade, or optimize your current site to meet modern performance and design standards."
+    },
+    {
+      question: "Which technologies do you use?",
+      answer:
+        "We work with modern tech stacks like React, Node.js, WordPress, Shopify, and more, depending on your needs."
+    }
+  ],
+  growth: {
+    title: "Web Development Success Metrics",
+    chartData: [
+      { label: "Load Speed Improvement", value: 90 },
+      { label: "Conversion Rate Increase", value: 82 },
+      { label: "Mobile Optimization Score", value: 95 },
+      { label: "User Engagement Boost", value: 78 }
+    ],
+    highlights: [
+      { icon: faRocket, text: "Up to 3x faster website load times" },
+      { icon: faMobileAlt, text: "100% mobile-friendly design" },
+      { icon: faChartLine, text: "Significant boost in on-site engagement" }
+    ]
+  }
+},
+{
+  id: "content-creation",
+  title: "Content Creation",
+  description:
+    "Craft high-quality, engaging content that captures attention, builds trust, and drives meaningful action across all platforms.",
+  details:
+    "Great content is the heartbeat of your digital presence. We create compelling, brand-aligned content that speaks to your audience’s needs and inspires action. From blog articles and videos to social media posts, email campaigns, and visual assets, we ensure your message is clear, consistent, and impactful. Every piece is optimized for SEO, shareability, and engagement — so your brand stays top-of-mind.",
+  image:
+    "https://cdn3d.iconscout.com/3d/premium/thumb/content-creation-3d-illustration-download-in-png-blend-fbx-gltf-file-formats--blog-article-idea-social-media-video-pack-business-marketing-illustrations-4169205.png",
+  features: [
+    "Custom blog posts, articles, and long-form content.",
+    "Social media content calendars with graphics and captions.",
+    "Video scripts, storyboards, and production planning.",
+    "Email newsletters and drip campaign content.",
+    "SEO-focused copywriting for web pages and landing pages.",
+    "Branded visuals, infographics, and marketing creatives."
+  ],
+  testimonials: [
+    {
+      name: "Priya Menon",
+      feedback:
+        "Our blog engagement and shares have doubled. The tone, style, and topics match our audience perfectly."
+    },
+    {
+      name: "Vikram S.",
+      feedback:
+        "They manage our content end-to-end — from idea to publishing. Consistency and quality are top-notch."
+    },
+    {
+      name: "Sonal Gupta",
+      feedback:
+        "From social posts to in-depth guides, the content has improved our visibility and helped us connect better with our audience."
+    }
+  ],
+  faqs: [
+    {
+      question: "Do you create content for all platforms?",
+      answer:
+        "Yes — we create platform-specific content for blogs, social media, email, video, and more."
+    },
+    {
+      question: "Will the content be SEO-friendly?",
+      answer:
+        "Absolutely. We optimize every piece with relevant keywords, meta descriptions, and best practices for discoverability."
+    },
+    {
+      question: "Can you match our brand voice?",
+      answer:
+        "Yes — we study your brand tone, audience, and goals to ensure the content aligns perfectly."
+    }
+  ],
+  growth: {
+    title: "Content Creation Performance Metrics",
+    chartData: [
+      { label: "Engagement Rate Increase", value: 85 },
+      { label: "Organic Traffic Growth", value: 78 },
+      { label: "Brand Visibility Boost", value: 82 },
+      { label: "Lead Generation from Content", value: 74 }
+    ],
+    highlights: [
+      { icon: faPenNib, text: "200+ high-quality pieces delivered monthly" },
+      { icon: faShareAlt, text: "Higher share rates across all channels" },
+      { icon: faSearch, text: "Optimized for discoverability and SEO" }
+    ]
+  }
+},
+{
+  id: "email-marketing",
+  title: "Email Marketing",
+  description:
+    "Engage, nurture, and convert your audience with targeted email campaigns that deliver measurable results.",
+  details:
+    "Email remains one of the most powerful channels for building customer relationships and driving conversions. We create personalized, visually appealing, and mobile-optimized email campaigns that speak directly to your audience’s needs. From welcome sequences and newsletters to promotional blasts and drip automations, every email is crafted to maximize open rates, click-throughs, and ROI — all backed by data-driven insights.",
+  image:
+    "https://cdn3d.iconscout.com/3d/premium/thumb/email-marketing-3d-illustration-download-in-png-blend-fbx-gltf-file-formats--campaign-promotion-business-social-media-pack-marketing-illustrations-5394366.png",
+  features: [
+    "Custom-designed, mobile-friendly email templates.",
+    "Automated drip campaigns for nurturing leads.",
+    "Personalized messaging based on user behavior.",
+    "A/B testing for subject lines, content, and CTAs.",
+    "Detailed performance analytics and reporting.",
+    "Integration with CRM and marketing automation tools."
+  ],
+  testimonials: [
+    {
+      name: "Rakesh Sinha",
+      feedback:
+        "Our open rates jumped by 40% after they redesigned our emails and improved segmentation."
+    },
+    {
+      name: "Meera Joshi",
+      feedback:
+        "They set up an entire automated funnel that now generates leads for us 24/7. Brilliant execution!"
+    },
+    {
+      name: "Arjun Kapoor",
+      feedback:
+        "The weekly newsletters keep our customers engaged and informed — we’ve seen a direct impact on repeat sales."
+    }
+  ],
+  faqs: [
+    {
+      question: "Do you handle email automation?",
+      answer:
+        "Yes — we set up automated campaigns for onboarding, nurturing, re-engagement, and more."
+    },
+    {
+      question: "Can you integrate with our CRM?",
+      answer:
+        "Absolutely. We work with platforms like HubSpot, Mailchimp, ActiveCampaign, Klaviyo, and others."
+    },
+    {
+      question: "Will you manage the content and design?",
+      answer:
+        "Yes — we handle everything from copywriting to template design, ensuring consistency with your brand."
+    }
+  ],
+  growth: {
+    title: "Email Marketing Performance Metrics",
+    chartData: [
+      { label: "Open Rate Increase", value: 84 },
+      { label: "Click-Through Rate Boost", value: 76 },
+      { label: "Lead Nurturing Efficiency", value: 81 },
+      { label: "Revenue from Email", value: 73 }
+    ],
+    highlights: [
+      { icon: faEnvelopeOpenText, text: "40%+ higher open rates for segmented lists" },
+      { icon: faUsers, text: "Automated workflows that run 24/7" },
+      { icon: faChartBar, text: "Data-backed improvements every month" }
+    ]
+  }
+},
+{
+  id: "conversion-optimization",
+  title: "Conversion Optimization",
+  description:
+    "Turn more visitors into customers by improving your website’s user experience, trust signals, and performance.",
+  details:
+    "Getting traffic is only half the battle — the real win is converting that traffic into leads or sales. Our Conversion Rate Optimization (CRO) service uses analytics, user behavior tracking, A/B testing, and persuasive design to increase the percentage of visitors who take action. We refine every step of your funnel, from landing pages to checkout, ensuring your audience moves seamlessly toward conversion.",
+  image:
+    "https://cdn3d.iconscout.com/3d/premium/thumb/conversion-rate-optimization-3d-illustration-download-in-png-blend-fbx-gltf-file-formats--website-traffic-seo-growth-pack-marketing-illustrations-4741873.png",
+  features: [
+    "In-depth funnel analysis and user behavior tracking.",
+    "A/B and multivariate testing for layouts, CTAs, and copy.",
+    "Optimized landing pages with persuasive content.",
+    "Improved site speed and mobile responsiveness.",
+    "Enhanced trust signals and social proof placement.",
+    "Detailed monthly reports with actionable insights."
+  ],
+  testimonials: [
+    {
+      name: "Shalini Verma",
+      feedback:
+        "We thought our site was fine — but after CRO, our sales shot up by 35% without increasing ad spend."
+    },
+    {
+      name: "Rahul Jain",
+      feedback:
+        "Their testing approach uncovered small tweaks that made a huge impact on our lead forms and checkout pages."
+    },
+    {
+      name: "Tanya Malhotra",
+      feedback:
+        "Our bounce rate dropped significantly, and we’re seeing more engaged visitors turning into customers."
+    }
+  ],
+  faqs: [
+    {
+      question: "Do you test changes before implementing?",
+      answer:
+        "Yes — we run A/B or multivariate tests to ensure improvements are backed by real data."
+    },
+    {
+      question: "Will CRO affect our SEO?",
+      answer:
+        "No — in fact, improving page speed, mobile experience, and engagement can have positive SEO benefits."
+    },
+    {
+      question: "Can you work with our existing design team?",
+      answer:
+        "Absolutely. We can either execute the changes or collaborate with your internal team to implement them."
+    }
+  ],
+  growth: {
+    title: "Conversion Optimization Performance Metrics",
+    chartData: [
+      { label: "Conversion Rate Increase", value: 88 },
+      { label: "Bounce Rate Reduction", value: 72 },
+      { label: "Lead Quality Improvement", value: 80 },
+      { label: "Checkout Completion Rate", value: 77 }
+    ],
+    highlights: [
+      { icon: faArrowTrendUp, text: "Up to 3x improvement in conversions" },
+      { icon: faMousePointer, text: "Better CTA engagement rates" },
+      { icon: faTachometerAlt, text: "Faster page loads for improved UX" }
+    ]
+  }
+},
+{
+  id: "analytics",
+  title: "Analytics & Insights",
+  description:
+    "Turn raw data into actionable insights to track performance, measure ROI, and make smarter business decisions.",
+  details:
+    "Data tells the real story of your business performance. Our analytics service helps you understand where your traffic comes from, how users behave, and what drives conversions. We set up advanced tracking, create interactive dashboards, and provide regular reports that reveal opportunities for growth. From Google Analytics and Tag Manager to heatmaps and funnel tracking, we make sure every decision you take is backed by solid data.",
+  image:
+    "https://cdn3d.iconscout.com/3d/premium/thumb/data-analytics-3d-illustration-download-in-png-blend-fbx-gltf-file-formats--analysis-graph-chart-report-business-pack-illustrations-5006137.png",
+  features: [
+    "Custom Google Analytics 4 (GA4) setup and configuration.",
+    "Event, goal, and conversion tracking for campaigns.",
+    "Interactive dashboards for real-time insights.",
+    "User behavior analysis with heatmaps and session recordings.",
+    "Attribution modeling to understand conversion paths.",
+    "Monthly performance reports with recommendations."
+  ],
+  testimonials: [
+    {
+      name: "Harshita Rao",
+      feedback:
+        "We used to make guesses — now we make decisions based on data. The clarity we have now is a game changer."
+    },
+    {
+      name: "Rohit Mehra",
+      feedback:
+        "They helped us set up tracking for every touchpoint. We finally know which campaigns are worth scaling."
+    },
+    {
+      name: "Ananya Sen",
+      feedback:
+        "The dashboards are simple to understand yet detailed enough for deep analysis. Saves us hours every week."
+    }
+  ],
+  faqs: [
+    {
+      question: "Do you provide ongoing reporting?",
+      answer:
+        "Yes — we deliver monthly reports along with quarterly deep-dive sessions to review performance."
+    },
+    {
+      question: "Can you integrate with our CRM or ad platforms?",
+      answer:
+        "Absolutely. We can connect analytics with Google Ads, Meta Ads, HubSpot, and more for unified insights."
+    },
+    {
+      question: "Will you help us set KPIs?",
+      answer:
+        "Yes — we define clear, measurable KPIs based on your business goals and track progress against them."
+    }
+  ],
+  growth: {
+    title: "Analytics & Insights Impact Metrics",
+    chartData: [
+      { label: "Data Accuracy Improvement", value: 92 },
+      { label: "ROI Tracking Efficiency", value: 85 },
+      { label: "Conversion Path Clarity", value: 80 },
+      { label: "Decision-Making Speed", value: 88 }
+    ],
+    highlights: [
+      { icon: faChartPie, text: "100% accurate tracking setup" },
+      { icon: faLightbulb, text: "Data-backed decision making" },
+      { icon: faProjectDiagram, text: "Clear view of multi-channel performance" }
+    ]
+  }
+}
+
+
+
+
+
+
 
 
   ];

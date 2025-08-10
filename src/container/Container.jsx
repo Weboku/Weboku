@@ -34,6 +34,7 @@ import RequireRole from "../routes/RequireRole";
 import Forbidden from "../Admin/Forbidden";
 import ManageAdmin from "../Admin/ManageAdmin/ManageAdmin";
 import Blogs from "../components/Blogs/Blogs";
+import Postpage from "../components/Blogs/Postpage/Postpage";
 
 const ScrollToTop = () => {
   const location = useLocation();
@@ -86,6 +87,7 @@ const Container = () => {
             <Route path="/services/ads/:adsid" element={<AdsIllustration />} />
             <Route path="/about" element={<About />} />
             <Route path="/blogs" element={<Blogs />} />
+            <Route path="/blogs/:category/:slug" element={<Postpage />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/services" element={<Services />} />
             <Route path="/process" element={<Process />} />
