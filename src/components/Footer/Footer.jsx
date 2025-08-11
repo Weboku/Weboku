@@ -47,7 +47,6 @@ const Footer = () => {
             <ul>
               <li><a href="/about">Our Story</a></li>
               <li><a href="/contact">Contact</a></li>
-              <li><a href="/testimonials">Testimonials</a></li>
                <li><a href="/Blogs">Blogs</a></li>
               {/* <li><a href="/press">Press</a></li> */}
             </ul>
@@ -67,8 +66,6 @@ const Footer = () => {
           <div className="footer-col">
             <h4>Resources</h4>
             <ul>
-              <li><a href="/blogs">Blog</a></li>
-              <li><a href="/faq">FAQ</a></li>
               <li><a href="/contact">Support</a></li>
               <li><a href="/our-strategies">Our Strategies</a></li>
               <li><a href="/terms-and-condition">Terms</a></li>
@@ -78,9 +75,9 @@ const Footer = () => {
           <div className="footer-col">
             <h4>Tools</h4>
             <ul>
-              <li><a href="/dashboard">Dashboard</a></li>
-              <li><a href="/reports">Reports</a></li>
-              <li><a href="/consultation">Get Consultation</a></li>
+              {/* <li><a href="/dashboard">Dashboard</a></li>
+              <li><a href="/reports">Reports</a></li> */}
+              <li><a href="/contact">Get Consultation</a></li>
               <li><a href="/privacy-policy">Privacy Policy</a></li>
               <li><a href="/disclaimer">Disclaimer</a></li>
             </ul>

@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { FaBars, FaTimes, FaPhoneAlt } from 'react-icons/fa';
+import { FaBars, FaTimes, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useLocalContext } from '../../context/LocalContext';
 import './Header.css';
+import TopHeader from './TopHeader/TopHeader';
 
 const Header = () => {
   const navigate = useNavigate();
@@ -23,6 +24,8 @@ const Header = () => {
   };
 
   return (
+    <>
+    <TopHeader />
     <header className={`clean-header ${scrolled ? 'scrolled' : ''}`}>
       <div className="header-inner">
         <div className="logo" onClick={() => handleNavigate('/')}>
@@ -73,9 +76,17 @@ const Header = () => {
             <FaPhoneAlt />
             <span>{webinfo.phone}</span>
           </button>
+           <button
+            className="drawer-call-btn"
+            onClick={() => window.location.href = `mailto:${webinfo.email}`}
+          >
+            <FaEnvelope />
+            <span>{webinfo.email}</span>
+          </button>
         </div>
       </div>
     </header>
+    </>
   );
 };
 

@@ -10,7 +10,7 @@ export const LocalProvider = ({ children }) => {
     name: "Weboku",
     phone: "",
     phonecall: "",
-    email:"kWilliams@gmail.com",
+    email:"webokudigital@gmail.com",
     address:"1410 Tail Ends Road, Green Bay, Wisconsin(WI), 54303",
     addressCity:"Wisconsin"
 });
