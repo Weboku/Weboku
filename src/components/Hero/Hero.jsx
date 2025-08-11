@@ -124,6 +124,13 @@ const cardVariants = {
 
 const navigate = useNavigate();
 
+const [isDesktop, setIsDesktop] = useState(() => window.innerWidth >= 1200);
+
+useEffect(() => {
+  const onResize = () => setIsDesktop(window.innerWidth >= 1200);
+  window.addEventListener('resize', onResize);
+  return () => window.removeEventListener('resize', onResize);
+}, []);
 
 
   return (
@@ -209,7 +216,7 @@ const navigate = useNavigate();
         variants={cardVariants}
         className={`kap-widget-card card-${index}`}
         key={index}
-        style={{ width: boxWidths[activeTab][index] || '160px' }}
+      style={ isDesktop ? { width: boxWidths[activeTab][index] || '160px' } : undefined }
       >
         {item.image ? (
           <img src={item.image} alt={item.title} className="kap-card-img" />

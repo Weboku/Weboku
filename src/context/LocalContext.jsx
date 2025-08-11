@@ -7,7 +7,7 @@ const LocalContext = createContext();
 export const LocalProvider = ({ children }) => {
   const [currentTFN, setCurrentTFN] = useState({ intlFormat: "", localFormat: "" });
   const [webinfo,setwebinfo] = useState({
-    name: "weboku",
+    name: "Weboku",
     phone: "",
     phonecall: "",
     email:"kWilliams@gmail.com",

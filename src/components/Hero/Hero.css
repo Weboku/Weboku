@@ -245,44 +245,110 @@
 }
 
 
-@media (max-width: var(--kap-break-lg)) {
+/* ========= Tablet (<= 992px) ========= */
+@media (max-width: 992px) {
   .kap-hero {
-    flex-direction: column;
+    height: auto;                 /* remove fixed height */
     padding: 4rem 2rem;
+    flex-direction: column;
+    align-items: stretch;
     text-align: center;
+    gap: 3rem;
   }
 
   .kap-hero-left {
-    text-align: center;
+    max-width: none;
+    align-items: center;
   }
 
   .kap-main-title {
     font-size: 3.2rem;
+    line-height: 1.25;
   }
 
   .kap-description {
     font-size: 1.5rem;
+    margin-top: 0;
   }
 
   .kap-review-logos {
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .kap-review-logos img {
+    width: 140px;
+    height: 60px;
+  }
+
+  .kap-tabbed-widget {
+    width: 100%;                 /* override desktop width: 680px */
+    max-width: 100%;
+    padding: 2rem;
+    height: 145rem;
+  }
+
+  .kap-widget-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.2rem;
+    justify-items: stretch;
+  }
+
+  /* make cards fill the grid cells on mobile/tablet */
+  .kap-widget-card {
+    width: 100%;
   }
 }
 
-@media (max-width: var(--kap-break-md)) {
-  .kap-tab-nav {
-    flex-direction: column;
-    gap: 0.6rem;
+/* ========= Phone (<= 576px) ========= */
+@media (max-width: 576px) {
+  .kap-hero {
+    padding: 3rem 1.6rem;
+    gap: 2rem;
+  }
+
+  .kap-badge {
+    font-size: 1.3rem;
+    padding: 0.4rem 1rem;
+  }
+
+  .kap-main-title {
+    font-size: 2.6rem;
+  }
+
+  .highlight-text {
+    font-size: 3.2rem;
   }
 
   .kap-cta-buttons {
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+    gap: 0.8rem;
   }
 
   .primary-cta,
   .secondary-cta {
     width: 100%;
-    text-align: center;
+  }
+
+  .kap-tab-nav {
+    gap: 0.6rem;
+    padding: 0.8rem;
+  }
+
+  .kap-tab-nav button {
+    font-size: 1.4rem;
+    padding: 0.7rem 1.2rem;
+  }
+
+  .kap-widget-grid {
+    grid-template-columns: 1fr;  /* single column on small phones */
+  }
+
+  .kap-card-title {
+    font-size: 1.4rem;
   }
 }
+

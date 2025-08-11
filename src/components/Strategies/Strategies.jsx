@@ -47,10 +47,37 @@ const strategyItems = [
 ];
 
 
+// Delayed in-view trigger for mobile/tablet
+function useViewportMotion() {
+  const [vp, setVp] = React.useState(() => {
+    const w = typeof window !== "undefined" ? window.innerWidth : 1920;
+    // Desktop: earlier trigger; Mobile/Tablet: require more scroll
+    return w >= 992
+      ? { once: true, amount: 0.25, margin: "0px 0px -10% 0px" }   // desktop
+      : { once: true, amount: 0.6,  margin: "-15% 0px -15% 0px" }; // mobile/tablet
+  });
+
+  React.useEffect(() => {
+    const onResize = () => {
+      const w = window.innerWidth;
+      setVp(w >= 992
+        ? { once: true, amount: 0.25, margin: "0px 0px -10% 0px" }
+        : { once: true, amount: 0.6,  margin: "-15% 0px -15% 0px" }
+      );
+    };
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, []);
+
+  return vp;
+}
+
+
 
 const Strategies = () => {
 
   const location = useLocation();
+    const vp = useViewportMotion();
 
   return (
     <>
@@ -60,7 +87,7 @@ const Strategies = () => {
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
+         viewport={vp} 
       >
         <h2>Digital Strategies That Drive Impact</h2>
         <p>
@@ -80,6 +107,7 @@ const Strategies = () => {
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: index * 0.1, duration: 0.5 }}
+       viewport={vp} 
     >
       <div
         className="strategy-icon-glow"

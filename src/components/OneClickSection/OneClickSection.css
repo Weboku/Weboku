@@ -253,17 +253,17 @@
   }
 
   .feature-block h3 {
-    font-size: 1.8rem;
+    font-size: 2.25rem;
   }
 
   .feature-block p,
   .card-tall p,
   .card-small p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 
   .card-btn {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding: 1rem 1.6rem;
   }
 
@@ -294,17 +294,17 @@
   }
 
   .feature-block h3 {
-    font-size: 1.6rem;
+    font-size: 2.25rem;
   }
 
   .feature-block p,
   .card-tall p,
   .card-small p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   .card-btn {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding: 1rem 1.4rem;
   }
 
@@ -334,17 +334,17 @@
   }
 
   .feature-block h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .feature-block p,
   .card-tall p,
   .card-small p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   .card-btn {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     padding: 0.9rem 1.4rem;
   }
 

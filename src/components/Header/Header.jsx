@@ -61,8 +61,8 @@ const Header = () => {
           <FaTimes className="close-icon" onClick={() => setMenuOpen(false)} />
         </div>
         <div className="drawer-links">
-          {['Home', 'Services', 'Our Strategies', 'Contact Us'].map((text, i) => (
-            <span key={i} onClick={() => handleNavigate(['/', '/services', '/our-strategies', '/contact'][i])}>
+          {['Home', 'Services', 'Our Strategies','Blogs','About','Contact Us'].map((text, i) => (
+            <span key={i} onClick={() => handleNavigate(['/', '/services', '/our-strategies','/blogs','/about', '/contact'][i])}>
               {text}
             </span>
           ))}

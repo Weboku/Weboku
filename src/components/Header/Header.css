@@ -149,6 +149,11 @@
   .nav-links {
     display: none;
   }
+
+  .clean-header{
+  padding: 1.5rem 2.5rem;
+  }
+
   .menu-toggle {
     display: block;
   }
