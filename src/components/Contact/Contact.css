@@ -196,6 +196,7 @@
   max-width: 1024px;
   margin: 28px auto 8px;
   text-align: center;
+  color: black;
   background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
   border: 1px solid #e5e7eb;
   border-radius: var(--radius-md);
@@ -211,7 +212,7 @@
 }
 
 .contact-cta h3 { margin: 0 0 6px; font-size: 1.7rem; }
-.contact-cta p { margin: 0; color: var(--text-muted); font-size: 1.45rem; }
+.contact-cta p { margin: 0; color: var(--text-dark); font-size: 1.45rem; }
 .contact-cta a { color: var(--primary-color); text-decoration: none; }
 .contact-cta a:hover { text-decoration: underline; }
 

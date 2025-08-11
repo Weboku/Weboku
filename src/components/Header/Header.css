@@ -6,7 +6,7 @@
   background: white;
   box-shadow: 0 0 0 transparent;
   transition: 0.3s ease all;
-  padding: 2rem 8.5rem;
+  padding: 1.5rem 8.5rem;
 }
 
 .clean-header.scrolled {
