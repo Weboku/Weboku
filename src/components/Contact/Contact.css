@@ -103,7 +103,7 @@
   place-items: center;
   border-radius: 50%;
   background: #eef2ff;
-  color: #3730a3;
+  color: #3730a3 !important;
   border: 1px solid #c7d2fe;
   font-size: 1.4rem;
 }

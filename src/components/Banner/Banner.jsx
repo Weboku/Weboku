@@ -16,7 +16,7 @@ const Banner = () => {
       experiences that turn visitors into loyal customers. Let’s launch
       campaigns that elevate your brand.
     </p>
-    <button>Get Your Free Growth Plan</button>
+    <button onClick={()=>navigate('/contact')}>Get Your Free Growth Plan</button>
   </motion.div>
 </section>
 
