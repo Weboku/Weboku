@@ -67,10 +67,10 @@ const Footer = () => {
           <div className="footer-col">
             <h4>Resources</h4>
             <ul>
-              <li><a href="/blog">Blog</a></li>
+              <li><a href="/blogs">Blog</a></li>
               <li><a href="/faq">FAQ</a></li>
-              <li><a href="/support">Support</a></li>
-              <li><a href="/strategies">Our Strategies</a></li>
+              <li><a href="/contact">Support</a></li>
+              <li><a href="/our-strategies">Our Strategies</a></li>
               <li><a href="/terms-and-condition">Terms</a></li>
             </ul>
           </div>
