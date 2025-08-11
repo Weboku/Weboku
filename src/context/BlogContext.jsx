@@ -110,20 +110,27 @@ export const BlogProvider = ({ children }) => {
   }, []);
 
   const fetchBlogsFromCategory = useCallback(async (categoryId) => {
-    try {
-      // Query from global collection by category (fast, indexed)
-      const q = query(
-        collection(db, "_blogs"),
-        where("category", "==", categoryId),
-        orderBy("createdAt", "desc")
-      );
-      const snap = await getDocs(q);
-      return snap.docs.map((d) => ({ id: d.id, ...d.data() }));
-    } catch (e) {
-      console.error(e);
-      toast.error("Failed to fetch category blogs");
-      return [];
-    }
+   try {
+  const q = query(
+    collection(db, "_blogs"),
+    where("category", "==", categoryId),
+    orderBy("createdAt", "desc")
+  );
+  const snap = await getDocs(q);
+  return snap.docs.map(d => ({ id: d.id, ...d.data() }));
+} catch (e) {
+  console.error(e);
+  if (e.code === "failed-precondition" && /index/.test(e.message)) {
+    // Extract link if present
+    const link = (e.message.match(/https?:\/\/[^\s)]+/g) || [])[0];
+    toast.error("Firestore needs a composite index for this query.");
+    if (link) console.log("Create the index here:", link);
+  } else {
+    toast.error("Failed to fetch category blogs");
+  }
+  return [];
+}
+
   }, []);
 
   const addBlog = useCallback(async (categoryId, blogData) => {

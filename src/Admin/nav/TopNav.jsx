@@ -2,11 +2,13 @@ import { useState, useEffect } from 'react';
 import './TopNav.css';
 import { useNavigate } from 'react-router-dom';
 import { useAdminContext } from '../../context/AdminContext';
+import { useLocalContext } from '../../context/LocalContext';
 
 const TopNav = () => {
   const [currentTime, setCurrentTime] = useState(new Date().toLocaleTimeString());
   const navigate = useNavigate();
   const { admin, adminLogout } = useAdminContext();
+  const {webinfo } = useLocalContext();
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -23,7 +25,7 @@ const TopNav = () => {
   return (
     <header className="admin-topnav">
       <div className="admin-topnav-left">
-        <h1 className="brand-name">TrustDigiagency</h1>
+        <h1 className="brand-name">{webinfo.name}</h1>
       </div>
       <div className="admin-topnav-right">
         <span className="welcome">Welcome, Admin</span>
