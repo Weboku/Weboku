@@ -1,8 +1,8 @@
 // ContactFormPopup.jsx
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faTimes } from "@fortawesome/free-solid-svg-icons";
-import { useMessageContext } from "../../context/MessageContext"; // <-- import your context
+import { useMessageContext } from "../../context/MessageContext";
 import "./ContactFormPopup.css";
 import { toast } from "react-toastify";
 
@@ -14,9 +14,11 @@ const ContactFormPopup = () => {
     return window.innerWidth >= 1280;
   }, []);
 
-  const [isOpen, setIsOpen] = useState(initialIsDesktop);
+  const [isOpen, setIsOpen] = useState(false); // start closed; will open after 2s
   const [isDesktop, setIsDesktop] = useState(initialIsDesktop);
-  const [submitting,setSubmitting] = useState(false)
+  const [submitting, setSubmitting] = useState(false);
+  const hasAutoOpened = useRef(false); // guard to run auto-open only once
+  const autoOpenTimer = useRef(null);
 
   const [form, setForm] = useState({
     name: "",
@@ -32,9 +34,17 @@ const ContactFormPopup = () => {
     return () => window.removeEventListener("resize", onResize);
   }, []);
 
-  // Auto-open on load for desktop only (can be tweaked)
+  // Auto-open after 2s (desktop only); run once
   useEffect(() => {
-    if (isDesktop) setIsOpen(true);
+    if (hasAutoOpened.current) return;
+    if (!isDesktop) return;
+    autoOpenTimer.current = setTimeout(() => {
+      setIsOpen(true);
+      hasAutoOpened.current = true;
+    }, 2000);
+    return () => {
+      if (autoOpenTimer.current) clearTimeout(autoOpenTimer.current);
+    };
   }, [isDesktop]);
 
   const onChange = (e) => {
@@ -42,47 +52,51 @@ const ContactFormPopup = () => {
     setForm((f) => ({ ...f, [name]: value }));
   };
 
- const onSubmit = async (e) => {
-  e.preventDefault();
-  setSubmitting(true)
+  const onSubmit = async (e) => {
+    e.preventDefault();
 
-  // Basic validation (HTML required still applies)
-  if (!form.name.trim() || !form.email.trim() || !form.message.trim()) {
-    toast.error("Please fill in all required fields.");
-    return;
-  }
+    // Basic validation (HTML required still applies)
+    if (!form.name.trim() || !form.email.trim() || !form.message.trim()) {
+      toast.error("Please fill in all required fields.");
+      return;
+    }
 
-  try {
-    // Save to context (and Firebase in your case)
-    const savedId = await addMessage({
-      type: "contact",
-      text: form.message,
-      author: "user",
-      name: form.name.trim(),
-      email: form.email.trim(),
-      phone: form.phone.trim(),
-      source: "contact-popup",
-      meta: { fromPopup: true },
-    });
+    try {
+      setSubmitting(true);
+      // Save to context (and Firebase)
+      const savedId = await addMessage({
+        type: "contact",
+        text: form.message.trim(),
+        author: "user",
+        name: form.name.trim(),
+        email: form.email.trim(),
+        phone: form.phone.trim(),
+        source: "contact-popup",
+        meta: { fromPopup: true },
+      });
 
-    toast.success("Thanks! We’ll get back to you within a day.");
-
-    // Reset + close
-    setForm({ name: "", email: "", phone: "", message: "" });
-    setIsOpen(false);
-
-    console.log("Message saved with ID:", savedId);
-  } catch (err) {
-    console.error("Error saving message:", err);
-    toast.error("Something went wrong. Please try again later.");
-  }
-};
-
+      toast.success("Thanks! We’ll get back to you within a day.");
+      // Reset + close
+      setForm({ name: "", email: "", phone: "", message: "" });
+      setIsOpen(false);
+      console.log("Message saved with ID:", savedId);
+    } catch (err) {
+      console.error("Error saving message:", err);
+      toast.error("Something went wrong. Please try again later.");
+    } finally {
+      setSubmitting(false);
+    }
+  };
 
   return (
     <>
       {isOpen ? (
-        <div className="contact-popup" role="dialog" aria-modal="true" aria-labelledby="contact-popup-title">
+        <div
+          className="contact-popup"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="contact-popup-title"
+        >
           <div className="contact-popup-header">
             <div style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
               <FontAwesomeIcon icon={faEnvelope} />
@@ -132,18 +146,17 @@ const ContactFormPopup = () => {
               required
             />
 
-           {submitting ? 
-           <button type="submit" disabled className="contact-submit-btn" style={{opacity:0.6}}>
-              <FontAwesomeIcon icon={faEnvelope} style={{ marginRight: "0.6rem" }} />
-              Sending Messages ...
-            </button>
-           :
-           <button type="submit" className="contact-submit-btn">
-              <FontAwesomeIcon icon={faEnvelope} style={{ marginRight: "0.6rem" }} />
-              Send Message
-            </button>    
-        }
-            
+            {submitting ? (
+              <button type="submit" disabled className="contact-submit-btn" style={{ opacity: 0.6 }}>
+                <FontAwesomeIcon icon={faEnvelope} style={{ marginRight: "0.6rem" }} />
+                Sending Messages ...
+              </button>
+            ) : (
+              <button type="submit" className="contact-submit-btn">
+                <FontAwesomeIcon icon={faEnvelope} style={{ marginRight: "0.6rem" }} />
+                Send Message
+              </button>
+            )}
 
             <p className="contact-privacy">We respect your privacy. No spam—ever.</p>
           </form>
@@ -152,7 +165,11 @@ const ContactFormPopup = () => {
         <button
           className="contact-popup-icon"
           aria-label="Open contact form"
-          onClick={() => setIsOpen(true)}
+          onClick={() => {
+            // If user opens manually, mark as opened to stop the timer effect later
+            hasAutoOpened.current = true;
+            setIsOpen(true);
+          }}
           title="Contact us"
         >
           <FontAwesomeIcon icon={faEnvelope} />
