@@ -252,15 +252,14 @@ const Contact = () => {
       <motion.div className="contact-map" {...fadeUp} transition={{ duration: 0.5, delay: 0.1 }}>
         <iframe
           title="Our location"
-          src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609915975!2d72.74109703785945!3d19.082197839145994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63a9d90e14b%3A0x838fe179b1bdc674!2s${encodeURIComponent(
-            city
-          )}!5e0!3m2!1sen!2sin!4v1719999999999`}
+          src={`https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1133.4349689740786!2d82.68855341570786!3d26.05460732842823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1755008614848!5m2!1sen!2sin`}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
           allowFullScreen
         />
       </motion.div>
     </section>
+    
   );
 };
 
