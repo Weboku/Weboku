@@ -86,8 +86,8 @@ const AdsIllustration = () => {
   <motion.img
     src={
       isGoogleAds
-        ? "https://www.connectintegratedmarketing.com/wp-content/uploads/2023/09/Google-Ads-agency.png"
-        : "https://icuc.social/wp-content/uploads/2024/07/Meta-Subscription-and-Social-Media-Management.webp"
+        ? "https://res.cloudinary.com/dqdngisww/image/upload/v1755007245/Google-Ads-agency_axkim5.png"
+        : "https://res.cloudinary.com/dqdngisww/image/upload/v1755007210/Meta-Subscription-and-Social-Media-Management_hlwhni.webp"
     }
     alt="Illustration"
     className="ads-hero-img"

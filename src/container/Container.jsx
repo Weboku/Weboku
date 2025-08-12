@@ -55,6 +55,7 @@ const Shell = ({ children }) => {
   const isAdmin = location.pathname.startsWith("/admin");
   return (
     <>
+       {!isAdmin && <ContactFormPopup />}
       {/* Only show public site chrome when NOT in /admin */}
       {!isAdmin && (
         <div className="circle-bg">
@@ -76,10 +77,11 @@ const Shell = ({ children }) => {
 };
 
 const Container = () => {
+
   return (
     <Router>
       <ScrollToTop />
-      <ContactFormPopup />
+   
       <Shell>
         <MainContent>
           <Routes>
