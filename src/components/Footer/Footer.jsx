@@ -26,6 +26,7 @@ const Footer = () => {
       {/* Top Section */}
       <div className="footer-top">
         <div className="footer-brand-subscribe">
+          <img src='https://res.cloudinary.com/dqdngisww/image/upload/v1754981932/image__1_-removebg-preview_z1m0lm.png' alt="" />
           <h2>{webinfo.name}</h2>
           <p>Smart digital marketing for modern businesses. Join the {webinfo.name} family!</p>
           <div className="footer-subscribe">

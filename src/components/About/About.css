@@ -3,6 +3,7 @@
 .about-page {
 
   color: #1e293b;
+  overflow-x: hidden;
   /* overflow-x: hidden; */
 }
 
@@ -14,6 +15,7 @@
   border-bottom-left-radius: 6rem;
   border-bottom-right-radius: 6rem;
   color: white;
+  
 }
 .about-hero h1 {
   font-size: 4rem;
@@ -361,9 +363,11 @@
   justify-content: space-between;
   gap: 4rem;
   flex-wrap: wrap;
-  max-width: 1340px;
+  max-width: 1280px;
   margin: 0 auto;
+  /* padding-left: 6rem; */
   align-items: flex-start;
+  /* border: 2px solid black; */
 }
 
 /* Left block */
@@ -386,14 +390,16 @@
 
 /* Right stats */
 .stats-grid {
-  display: grid;
-  flex: 1 1 600px;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  width: 65%;
+ display: flex;
+  /* flex-wrap: wrap; */
+  gap: 1.5rem;
+  /* border: 2px solid black; */
 }
 
 /* Stat Card */
 .stat-block {
+  min-width: 220px;
   background: white;
   border-radius: 1.2rem;
   padding: 2.4rem 2rem;
@@ -441,9 +447,9 @@
 /* Responsive */
 @media (max-width: 992px) {
   .about-stats-container {
-    flex-direction: column;
     align-items: center;
     text-align: center;
+    padding-left: 0;
   }
 
   .stats-intro {
@@ -451,17 +457,21 @@
   }
 
   .stats-grid {
-    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    flex:none;
+    gap: 2rem;
   }
 }
 
 @media (max-width: 600px) {
   .stats-grid {
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
   }
 
   .stat-block {
+    width: 260px;
     padding: 2rem;
+    margin-top: 4rem;
   }
 
   .stat-icon-circle {

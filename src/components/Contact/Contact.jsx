@@ -1,5 +1,5 @@
-// Contact.jsx
-import React from "react";
+// Contact.jsx (updated with phone)
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -12,6 +12,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "./Contact.css";
 import { useLocalContext } from "../../context/LocalContext";
+import { useMessageContext } from "../../context/MessageContext";
+import { toast } from "react-toastify";
 
 const fadeUp = {
   initial: { opacity: 0, y: 24 },
@@ -21,10 +23,57 @@ const fadeUp = {
 
 const Contact = () => {
   const { webinfo = {} } = useLocalContext();
+  const { addMessage } = useMessageContext();
 
   const phoneHref = webinfo.phonecall || webinfo.phone || "";
   const email = webinfo.email || "";
   const city = webinfo.addressCity || "India";
+
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: ""
+  });
+  const [submitting, setSubmitting] = useState(false);
+
+  const onChange = (e) => {
+    const { name, value } = e.target;
+    setForm((f) => ({ ...f, [name]: value }));
+  };
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+
+    if (!form.name.trim() || !form.email.trim() || !form.message.trim()) {
+      toast.error("Please fill in Name, Email, and Message.");
+      return;
+    }
+
+    try {
+      setSubmitting(true);
+
+      await addMessage({
+        type: "contact",
+        text: form.message.trim(),
+        author: "user",
+        name: form.name.trim(),
+        email: form.email.trim(),
+        phone: form.phone.trim() || null,
+        source: "contact-page",
+        meta: { subject: form.subject.trim() || null }
+      });
+
+      toast.success("Thanks! We’ll get back to you within a day.");
+      setForm({ name: "", email: "", phone: "", subject: "", message: "" });
+    } catch (err) {
+      console.error("Contact submit error:", err);
+      toast.error("Something went wrong. Please try again later.");
+    } finally {
+      setSubmitting(false);
+    }
+  };
 
   return (
     <section className="contact-section">
@@ -111,36 +160,77 @@ const Contact = () => {
 
         {/* Form */}
         <motion.div className="contact-card contact-form" {...fadeUp} transition={{ duration: 0.6, delay: 0.05 }}>
-          <form onSubmit={(e) => e.preventDefault()} noValidate>
+          <form onSubmit={onSubmit} noValidate>
             <div className="form-row">
               <div className="form-field">
                 <label htmlFor="name">Your Name</label>
-                <input id="name" type="text" placeholder="Jane Doe" required />
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="Jane Doe"
+                  value={form.name}
+                  onChange={onChange}
+                  required
+                />
               </div>
               <div className="form-field">
                 <label htmlFor="email">Email</label>
-                <input id="email" type="email" placeholder="jane@company.com" required />
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="jane@company.com"
+                  value={form.email}
+                  onChange={onChange}
+                  required
+                />
               </div>
+            </div>
+
+            <div className="form-field">
+              <label htmlFor="phone">Phone (optional)</label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                placeholder="+91 98765 43210"
+                value={form.phone}
+                onChange={onChange}
+              />
             </div>
 
             <div className="form-field">
               <label htmlFor="subject">Subject</label>
-              <input id="subject" type="text" placeholder="Project, question, or idea" />
+              <input
+                id="subject"
+                name="subject"
+                type="text"
+                placeholder="Project, question, or idea"
+                value={form.subject}
+                onChange={onChange}
+              />
             </div>
 
             <div className="form-field">
               <label htmlFor="message">Your Message</label>
-              <textarea id="message" rows="6" placeholder="Tell us a bit about what you need…" required />
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Tell us a bit about what you need…"
+                value={form.message}
+                onChange={onChange}
+                required
+              />
             </div>
 
             <div className="form-actions">
-              <button type="submit" className="btn solid">
+              <button type="submit" className="btn solid" disabled={submitting}>
                 <FontAwesomeIcon icon={faPaperPlane} />
-                Send message
+                {submitting ? "Sending…" : "Send message"}
               </button>
-              <span className="form-note">
-                We’ll get back within one business day.
-              </span>
+              <span className="form-note">We’ll get back within one business day.</span>
             </div>
           </form>
         </motion.div>

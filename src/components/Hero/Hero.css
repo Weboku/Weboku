@@ -1,8 +1,8 @@
 
 
 .kap-hero {
-  height: 74rem;
-  padding: 6rem 8rem;
+  min-height: 70rem;
+  padding: 4rem 8rem;
   display: flex;
   /* align-items: center; */
   justify-content: space-between;
@@ -67,13 +67,15 @@
   flex-wrap: wrap;
 }
 
+
+
 .primary-cta {
-  background: var(--primary-color);
+  background: var(--accent-color);
   color: var(--text-light);
   border: none;
   padding: 1rem 2rem;
-  font-size: 1.4rem;
   font-weight: 600;
+   font-size: 1.8rem;
   border-radius: var(--radius-md);
   cursor: pointer;
   transition: 0.3s ease;
@@ -88,7 +90,7 @@
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
   padding: 1rem 2rem;
-  font-size: 1.4rem;
+   font-size: 1.6rem;
   font-weight: 600;
   border-radius: var(--radius-md);
   cursor: pointer;
@@ -125,7 +127,7 @@
   width: 680px;
   flex-direction: column;
   /* flex: 1 1 520px; */
-  padding: 2.4rem;
+  padding: 0rem 2.4rem;
   border-radius: var(--radius-lg);
   /* box-shadow: var(--shadow-lg); */
 }
@@ -339,7 +341,7 @@
   }
 
   .kap-tab-nav button {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     padding: 0.7rem 1.2rem;
   }
 
@@ -350,5 +352,62 @@
   .kap-card-title {
     font-size: 1.4rem;
   }
+}
+
+/* ========= Small laptops (993px–1200px) ========= */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .kap-hero {
+    height: 170rem;
+    padding: 4rem 2rem;
+    justify-content: center;
+    /* flex-direction: column; */
+    /* align-items: stretch; */
+    text-align: center;
+    gap: 3rem;
+    border: 2px solid bl;
+  }
+
+  .kap-hero-left {
+    max-width: none;
+    align-items: center;
+  }
+
+  .kap-main-title {
+    font-size: 4rem;
+    line-height: 1.25;
+  }
+
+  .kap-description {
+    font-size: 1.8rem;
+    margin-top: 0;
+  }
+
+  .kap-review-logos {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .kap-review-logos img {
+    width: 140px;
+    height: 60px;
+  }
+
+    .kap-tabbed-widget {
+    width: 100%;
+    max-width: 100%;
+    padding: 2rem;
+    height: 145rem; /* keep if you need fixed height; otherwise remove */
+  }
+
+  .kap-widget-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* same as tablet */
+    gap: 1.2rem;
+    justify-items: stretch;
+  }
+
+  .kap-widget-card { width: 100%; }
+
 }
 

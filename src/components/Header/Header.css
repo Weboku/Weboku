@@ -26,6 +26,23 @@
   color: var(--primary-color);
 }
 
+.header-inner .logo img{
+  width:105px;
+  /* border: 2px solid black; */
+  display: block;
+  max-height: 110px;
+  object-fit: contain;
+  padding: 0;
+  margin: 0;
+}
+
+.header-logo .logo img {
+  object-fit: contain;
+  clip-path: inset(5% 5% 5% 5%) !important; /* trims edges equally */
+}
+
+
+
 .nav-links {
   display: flex;
   gap: 2.4rem;
@@ -62,7 +79,7 @@
   display: flex;
   align-items: center;
   gap: 0.8rem;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   border: none;
   cursor: pointer;
   transition: 0.3s;
@@ -150,6 +167,16 @@
   .nav-links {
     display: none;
   }
+
+  .header-inner .logo img{
+  width:80px;
+  /* border: 2px solid black; */
+  display: block;
+  max-height: 110px;
+  object-fit: contain;
+  padding: 0;
+  margin: 0;
+}
 
   .clean-header{
   padding: 1.5rem 2.5rem;

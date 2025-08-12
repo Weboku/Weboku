@@ -57,7 +57,7 @@ const OneClickSection = forwardRef((props, ref) => {
           <h5>4.7★ Client Satisfaction</h5>
           <p>Rated across 200+ brands for campaign performance & transparency.</p>
           <img
-            src="https://res.cloudinary.com/dqg8b5o90/image/upload/v1753673287/Weboku/business_graph_grow_with_people_work_together-1-e1694333609769-removebg-preview_1.png"
+            src="https://res.cloudinary.com/dqdngisww/image/upload/v1754989866/business_graph_grow_with_people_work_together-1-e1694333609769-removebg-preview_1_mm99te.png"
             alt="Client Feedback"
             className="trust-image"
           />

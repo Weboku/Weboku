@@ -40,7 +40,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-  "git": "npm run build && git add -A && git commit -m \" update 1108 updated top bar added the pages and optimized || update 1108 optimized code build firebase indexes| update1108 updated header padding || update1108 updated responsiveness and testimonial fix\" && git push -u -f origin main && npm run firebase",
+  "git": "npm run build && git add -A && git commit -m \" update 1208 updated hero section , updated logo and color scheme, small laptop friendly, added contact form\" && git push -u -f origin main && npm run firebase",
     "firebase": "firebase deploy --only hosting"
   },
   "eslintConfig": {

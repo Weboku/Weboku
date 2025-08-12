@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 import { FaPaperPlane } from "react-icons/fa";
 
 const tools = [
-  { name: "Google Ads", img: "https://res.cloudinary.com/dlcgjnkvv/image/upload/v1750426823/Digital%20Marketting/Tech%20Stack/google-ads_sqagqu.svg" },
-  { name: "Meta Ads",   img: "https://res.cloudinary.com/dlcgjnkvv/image/upload/v1750426831/Digital%20Marketting/Tech%20Stack/6033716_o4df5g.png" },
-  { name: "SEMrush",    img: "https://res.cloudinary.com/dlcgjnkvv/image/upload/v1750426838/Digital%20Marketting/Tech%20Stack/semrush-icon_jvv8k3.png" },
-  { name: "Ahrefs",     img: "https://res.cloudinary.com/dlcgjnkvv/image/upload/v1750426845/Digital%20Marketting/Tech%20Stack/primary-light-AK6KQQMG_ws6k2g.png" },
-  { name: "GA4",        img: "https://res.cloudinary.com/dlcgjnkvv/image/upload/v1750426853/Digital%20Marketting/Tech%20Stack/google-analytics-4_q1goki.svg" },
-  { name: "WordPress",  img: "https://res.cloudinary.com/dlcgjnkvv/image/upload/v1750426862/Digital%20Marketting/Tech%20Stack/174881_h0yxei.png" },
+  { name: "Google Ads", img: "https://res.cloudinary.com/dqdngisww/image/upload/v1754989934/google-ads_sqagqu_svxmzt.svg" },
+  { name: "Meta Ads",   img: "https://res.cloudinary.com/dqdngisww/image/upload/v1754989950/6033716_o4df5g_eawx0s.png" },
+  { name: "SEMrush",    img: "https://res.cloudinary.com/dqdngisww/image/upload/v1754989966/semrush-icon_jvv8k3_urlbby.png" },
+  { name: "Ahrefs",     img: "https://res.cloudinary.com/dqdngisww/image/upload/v1754989980/primary-light-AK6KQQMG_ws6k2g_q0gapq.png" },
+  { name: "GA4",        img: "https://res.cloudinary.com/dqdngisww/image/upload/v1754989997/google-analytics-4_q1goki_gdawfq.svg" },
+  { name: "WordPress",  img: "https://res.cloudinary.com/dqdngisww/image/upload/v1754990014/174881_h0yxei_uqj5gk.png" },
 ];
 
 const TechStack = () => {

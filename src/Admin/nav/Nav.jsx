@@ -70,7 +70,7 @@ const Nav = () => {
       : []),
     { name: "Blogs", path: "/admin/blog", icon: faFileAlt, count: blogCount },
     { name: "Messages", path: "/admin/manage-contacts", icon: faContactBook },
-    { name: "Comments", path: "/admin/manage-comments", icon: faUser },
+    // { name: "Comments", path: "/admin/manage-comments", icon: faUser },
   ];
 
   return (

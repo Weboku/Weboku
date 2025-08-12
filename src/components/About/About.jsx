@@ -75,14 +75,14 @@ const About = () => {
             Let’s turn your online presence into your greatest business asset.
           </p>
           <motion.div className="kap-review-logos" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.4 }}>
-            <img src="https://tse2.mm.bing.net/th/id/OIP.TcdrrPoaI1Qa3XMrit7dUwAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Google Reviews" />
-            <img src="https://sunshinedesign.com.au/wp-content/uploads/2021/10/clutch-reviews-1.png" alt="Clutch Reviews" />
-            <img src="https://www.besdamsoup.com/static/sitefiles/testimonials/111.jpg" alt="Trustpilot Reviews" />
+            <img src="https://res.cloudinary.com/dqdngisww/image/upload/v1754989055/OIP_em6kb3.webp" alt="Google Reviews" />
+            <img src="https://res.cloudinary.com/dqdngisww/image/upload/v1754989071/clutch-reviews-1_ogj2br.png" alt="Clutch Reviews" />
+            <img src="https://res.cloudinary.com/dqdngisww/image/upload/v1754989087/111_zv1cvi.jpg" alt="Trustpilot Reviews" />
           </motion.div>
         </div>
 
         <div className="welcome-img">
-          <img src="https://artdigitalmedia.co.uk/wp-content/uploads/2023/10/%E2%80%94Pngtree%E2%80%94happy-business-people-celebrating-success_7516356-1024x1024.png" alt="" />
+          <img src="https://res.cloudinary.com/dqdngisww/image/upload/v1754989597/E2_80_94Pngtree_E2_80_94happy-business-people-celebrating-success_7516356-1024x1024_mos19s.png" alt="" />
         </div>
       </motion.div>
 
@@ -105,7 +105,7 @@ const About = () => {
           <p className="tab-desc">{renderTabContent()}</p>
         </div>
         <div className="tabs-image">
-          <img src="https://img.freepik.com/premium-vector/vector-organic-flat-people-business-training-illustration-flat-illustration_787500-5793.jpg?w=2000" alt="tab" />
+          <img src="https://res.cloudinary.com/dqdngisww/image/upload/v1754989656/vector-organic-flat-people-business-training-illustration-flat-illustration_787500-5793_lfpxgl.jpg" alt="tab" />
         </div>
       </motion.div>
 
@@ -113,7 +113,7 @@ const About = () => {
       <motion.div className="about-banner" initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay:  0.2, duration: 0.6 }}>
-        <img src="https://img.freepik.com/premium-photo/person-enjoying-virtual-teambuilding-activity_1029473-399110.jpg" alt="Team" />
+        <img src="https://res.cloudinary.com/dqdngisww/image/upload/v1754989691/person-enjoying-virtual-teambuilding-activity_1029473-399110_kfp0zq.jpg" alt="Team" />
       </motion.div>
 
       {/* Core Pillars */}

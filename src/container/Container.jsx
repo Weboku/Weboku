@@ -35,6 +35,7 @@ import Forbidden from "../Admin/Forbidden";
 import ManageAdmin from "../Admin/ManageAdmin/ManageAdmin";
 import Blogs from "../components/Blogs/Blogs";
 import Postpage from "../components/Blogs/Postpage/Postpage";
+import ContactFormPopup from "../components/ContactFormPopup/ContactFormPopup";
 
 const ScrollToTop = () => {
   const location = useLocation();
@@ -78,6 +79,7 @@ const Container = () => {
   return (
     <Router>
       <ScrollToTop />
+      <ContactFormPopup />
       <Shell>
         <MainContent>
           <Routes>
@@ -95,7 +97,7 @@ const Container = () => {
             <Route path="/disclaimer" element={<Disclaimer />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-and-condition" element={<Terms />} />
-
+            
             {/* Admin redirect for clean UX */}
             <Route path="/admin" element={<Navigate to="/admin/dashboard" replace />} />
 

@@ -87,8 +87,8 @@
 }
 
 .svcpg-btn {
-  background: var(--accent-color);
-  color: #1e293b;
+  background: var(--accent-color-gradient);
+  color: var(--text-light);
   border: none;
   padding: 1.2rem 1.6rem;
   border-radius: var(--radius-md);
@@ -270,7 +270,7 @@
 .svcpg-visual img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 .svcpg-visual figcaption {

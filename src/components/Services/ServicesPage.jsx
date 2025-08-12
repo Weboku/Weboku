@@ -46,7 +46,7 @@ const ServicesPage = () => {
   details:
     "SEO is more than keywords — it’s a long-term growth strategy. Our SEO service covers everything from technical audits and on-page optimization to content marketing and backlink strategies. Whether you’re a local business or an enterprise, we tailor SEO that aligns with your goals and converts traffic into action.",
   image:
-    "https://res.cloudinary.com/dlcgjnkvv/image/upload/v1754027883/Digital%20Marketting/seo-search-engine-optimization-concept_n8ixcu.jpg",
+    "https://res.cloudinary.com/dqdngisww/image/upload/v1754990215/business-employees-analyzing-search-improvement-seo-search-engine-optimization-top-ranking_530733-3445_im94jb.jpg",
   features: [
     "Comprehensive site audits and technical SEO fixes.",
     "On-page optimization for all key landing pages.",
@@ -112,7 +112,7 @@ const ServicesPage = () => {
   details:
     "Advertising isn't just about spending money — it's about making every click count. Our Ad Services deliver full-funnel campaigns across Google, Facebook, Instagram, and YouTube. We handle everything: strategy, creatives, targeting, A/B testing, and daily optimizations — so you get results, not guesswork.",
   image:
-    "https://cdni.iconscout.com/illustration/premium/thumb/male-web-designer-8621249-6838917.png",
+    "https://res.cloudinary.com/dqdngisww/image/upload/v1754990266/male-web-designer-8621249-6838917_zsyfrr.png",
   features: [
     "Cross-platform ad campaigns: Google, Meta, LinkedIn, YouTube.",
     "Full-funnel setup: awareness, interest, conversion, retargeting.",
@@ -125,12 +125,12 @@ const ServicesPage = () => {
     {
       name: "Meta Ads",
       route: "/services/ads/meta-ads",
-      img:"https://res.cloudinary.com/dlcgjnkvv/image/upload/v1750426831/Digital%20Marketting/Tech%20Stack/6033716_o4df5g.png"
+      img:"https://res.cloudinary.com/dqdngisww/image/upload/v1754990294/6033716_o4df5g_xutys6.png"
     },
     {
       name: "Google Ads",
       route: "/services/ads/google-ads",
-      img:"https://res.cloudinary.com/dlcgjnkvv/image/upload/v1750426823/Digital%20Marketting/Tech%20Stack/google-ads_sqagqu.svg"
+      img:"https://res.cloudinary.com/dqdngisww/image/upload/v1754990310/google-ads_sqagqu_grogx6.svg"
     }
   ],
   testimonials: [
@@ -190,7 +190,7 @@ const ServicesPage = () => {
   details:
     "We combine strategy, content, design, and data to create marketing that doesn’t just look good — it performs. From SEO and ads to content, analytics, and CRO, our digital marketing service is the full stack your business needs to grow online. Whether you want awareness, traffic, or conversions — we deliver, track, and improve at every step.",
   image:
-    "https://img.graphicsurf.com/2020/01/digital-marketing-vector-illustration5.jpg",
+    "https://res.cloudinary.com/dqdngisww/image/upload/v1754990499/digital-marketing-vector-illustration5_cwsulu.jpg",
   features: [
     "Comprehensive strategy: SEO, SEM, email, content, and analytics.",
     "Website optimization: speed, UX, CRO (conversion rate optimization).",
@@ -257,7 +257,7 @@ const ServicesPage = () => {
   details:
     "Your brand is more than a logo — it’s the story, promise, and perception you build in the minds of your audience. We help you articulate your purpose, position your business in the market, and craft a cohesive brand identity that stands out. From naming and messaging to design systems and brand guidelines, we ensure every element works together to strengthen trust, loyalty, and recognition.",
   image:
-    "https://cdn3d.iconscout.com/3d/premium/thumb/brand-strategy-3d-illustration-download-in-png-blend-fbx-gltf-file-formats--branding-plan-logo-promotion-pack-marketing-illustrations-5510548.png",
+    "https://res.cloudinary.com/dqdngisww/image/upload/v1754990560/building-brand-marketing-strategy-9535821-7825671_tt0rb2.png",
   features: [
     "Comprehensive brand audits to assess strengths and gaps.",
     "Clear positioning and messaging framework.",
@@ -323,7 +323,7 @@ const ServicesPage = () => {
   details:
     "Your website is your digital storefront — and we make sure it’s built to impress and perform. From concept to launch, we design and develop websites that are fast, secure, mobile-responsive, and tailored to your brand’s goals. Whether it’s an informational site, eCommerce store, or custom web application, we combine design excellence with modern development standards to deliver a seamless online experience that drives results.",
   image:
-    "https://cdni.iconscout.com/illustration/premium/thumb/web-development-4522877-3764936.png",
+    "https://res.cloudinary.com/dqdngisww/image/upload/v1754990627/web-development-team-illustration-ozzgkiub8q3jff8p_rbrctt.png",
   features: [
     "Custom website design and development tailored to your brand.",
     "Responsive layouts for flawless performance across all devices.",
@@ -389,7 +389,7 @@ const ServicesPage = () => {
   details:
     "Great content is the heartbeat of your digital presence. We create compelling, brand-aligned content that speaks to your audience’s needs and inspires action. From blog articles and videos to social media posts, email campaigns, and visual assets, we ensure your message is clear, consistent, and impactful. Every piece is optimized for SEO, shareability, and engagement — so your brand stays top-of-mind.",
   image:
-    "https://cdn3d.iconscout.com/3d/premium/thumb/content-creation-3d-illustration-download-in-png-blend-fbx-gltf-file-formats--blog-article-idea-social-media-video-pack-business-marketing-illustrations-4169205.png",
+    "https://res.cloudinary.com/dqdngisww/image/upload/v1754990726/content-creator-5597780-4680827_yfe8eg.png",
   features: [
     "Custom blog posts, articles, and long-form content.",
     "Social media content calendars with graphics and captions.",
@@ -455,7 +455,7 @@ const ServicesPage = () => {
   details:
     "Email remains one of the most powerful channels for building customer relationships and driving conversions. We create personalized, visually appealing, and mobile-optimized email campaigns that speak directly to your audience’s needs. From welcome sequences and newsletters to promotional blasts and drip automations, every email is crafted to maximize open rates, click-throughs, and ROI — all backed by data-driven insights.",
   image:
-    "https://cdn3d.iconscout.com/3d/premium/thumb/email-marketing-3d-illustration-download-in-png-blend-fbx-gltf-file-formats--campaign-promotion-business-social-media-pack-marketing-illustrations-5394366.png",
+    "https://res.cloudinary.com/dqdngisww/image/upload/v1754990788/Email-Marketing-Illustration-1024x844_wcadxm.jpg",
   features: [
     "Custom-designed, mobile-friendly email templates.",
     "Automated drip campaigns for nurturing leads.",
@@ -521,7 +521,7 @@ const ServicesPage = () => {
   details:
     "Getting traffic is only half the battle — the real win is converting that traffic into leads or sales. Our Conversion Rate Optimization (CRO) service uses analytics, user behavior tracking, A/B testing, and persuasive design to increase the percentage of visitors who take action. We refine every step of your funnel, from landing pages to checkout, ensuring your audience moves seamlessly toward conversion.",
   image:
-    "https://cdn3d.iconscout.com/3d/premium/thumb/conversion-rate-optimization-3d-illustration-download-in-png-blend-fbx-gltf-file-formats--website-traffic-seo-growth-pack-marketing-illustrations-4741873.png",
+    "https://res.cloudinary.com/dqdngisww/image/upload/v1754991421/tips-to-increase-conversion-rates-strategy-1320x879_rqqnt5.jpg",
   features: [
     "In-depth funnel analysis and user behavior tracking.",
     "A/B and multivariate testing for layouts, CTAs, and copy.",
@@ -587,7 +587,7 @@ const ServicesPage = () => {
   details:
     "Data tells the real story of your business performance. Our analytics service helps you understand where your traffic comes from, how users behave, and what drives conversions. We set up advanced tracking, create interactive dashboards, and provide regular reports that reveal opportunities for growth. From Google Analytics and Tag Manager to heatmaps and funnel tracking, we make sure every decision you take is backed by solid data.",
   image:
-    "https://cdn3d.iconscout.com/3d/premium/thumb/data-analytics-3d-illustration-download-in-png-blend-fbx-gltf-file-formats--analysis-graph-chart-report-business-pack-illustrations-5006137.png",
+    "https://res.cloudinary.com/dqdngisww/image/upload/v1754990950/interactive-whiteboard-with-diagrams-notes-vector-illustration_1253202-1279_d9ehif.jpg",
   features: [
     "Custom Google Analytics 4 (GA4) setup and configuration.",
     "Event, goal, and conversion tracking for campaigns.",

@@ -7,13 +7,18 @@
 .footer-top {
   display: flex;
   flex-wrap: wrap;
-  padding: 60px 40px;
+  padding: 60px 98px;
   gap: 40px;
   justify-content: space-between;
 }
 
 .footer-brand-subscribe {
   flex: 1 1 260px;
+}
+
+.footer-brand-subscribe  img{
+  width: 100px;
+  margin-left: -1rem;
 }
 
 .footer-brand-subscribe h2 {
@@ -105,7 +110,7 @@
   background-color: #17233a;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  padding: 40px;
+  padding: 40px 80px;
   gap: 30px;
 }
 
@@ -124,11 +129,11 @@
 .footer-value h5 {
   margin: 0 0 6px;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 1.8rem;
 }
 
 .footer-value p {
-  font-size: 13.5px;
+  font-size: 1.4rem;
   color: #94a3b8;
   line-height: 1.5;
 }

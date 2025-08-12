@@ -29,7 +29,8 @@ const Header = () => {
     <header className={`clean-header ${scrolled ? 'scrolled' : ''}`}>
       <div className="header-inner">
         <div className="logo" onClick={() => handleNavigate('/')}>
-          <strong>{webinfo.name || 'DM Agency'}</strong>
+          <img src={webinfo.logo} alt="" />
+          {/* <strong>{webinfo.name || 'DM Agency'}</strong> */}
         </div>
 
         <nav className="nav-links">

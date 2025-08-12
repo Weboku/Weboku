@@ -10,6 +10,7 @@ export const LocalProvider = ({ children }) => {
     name: "Weboku",
     phone: "",
     phonecall: "",
+    logo:"https://res.cloudinary.com/dqdngisww/image/upload/v1754982587/WhatsApp_Image_2025-08-12_at_11.53.57_df911e48-removebg-preview_uq7bg8.png",
     email:"webokudigital@gmail.com",
     address:"1410 Tail Ends Road, Green Bay, Wisconsin(WI), 54303",
     addressCity:"Wisconsin"

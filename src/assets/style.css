@@ -17,8 +17,9 @@ html {
 :root {
   --primary-color: #0052cc;
   --primary-color-light: #9270cc;
-  --accent-color: #facc15;
-  --accent-color-dark: #eab308;
+  --accent-color: #ff7a59;
+  --accent-color-dark:  #ff6a3d;
+  --accent-color-gradient: linear-gradient(180deg, #ff7a59, #ff6a3d);
   --text-light: #ffffff;
   --text-muted: #f1f5f9;
   --text-dark: #1e293b;
