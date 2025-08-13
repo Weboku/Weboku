@@ -169,7 +169,7 @@ useEffect(() => {
   <motion.div className="kap-trust-stats" variants={fadeSlideUp}>
     <span>
       <FaUsers style={{ marginRight: '0.4rem', marginBottom: '-0.2rem' }} />
-      4.9/5 Rated by 2,500+ Clients
+      4.9/5 Rated by 100+ Clients
     </span>
     &nbsp;&nbsp;|&nbsp;&nbsp;
     <span>
