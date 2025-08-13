@@ -16,6 +16,7 @@ html {
 
 :root {
   --primary-color: #0052cc;
+   --primary-color-dark: #0a49a8;
   --primary-color-light: #9270cc;
   --accent-color: #ff7a59;
   --accent-color-dark:  #ff6a3d;

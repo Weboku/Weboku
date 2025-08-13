@@ -70,7 +70,7 @@
 
 
 .primary-cta {
-  background: var(--accent-color);
+  background: var(--accent-color-gradient);
   color: var(--text-light);
   border: none;
   padding: 1rem 2rem;
@@ -82,8 +82,9 @@
 }
 
 .primary-cta:hover {
-  background: var(--kap-purple-dark);
-}
+  /* background: var(--accent-color-dark); */
+  transform: translateY(-0.2rem);
+}  
 
 .secondary-cta {
   background: transparent;
@@ -100,6 +101,7 @@
 .secondary-cta:hover {
   background: var(--primary-color);
   color: var(--text-light);
+    transform: translateY(-0.2rem);
 }
 
 .kap-review-logos {

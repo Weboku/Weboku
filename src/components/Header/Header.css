@@ -83,11 +83,12 @@
   border: none;
   cursor: pointer;
   transition: 0.3s;
+  font-weight: 600;
 }
 
 .call-now-btn:hover {
-  background-color: var(--secondary-color);
-  color: var(--text-dark);
+  background-color: var(--primary-color-dark);
+  color: white;
 }
 
 .menu-toggle {
