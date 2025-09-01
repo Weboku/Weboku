@@ -81,7 +81,7 @@
 .pf-left{ display:grid; align-content:start; gap:1.2rem; }
 .pf-avatar-xl{
   position:relative; width: clamp(12rem, 18vw, 16rem); height: clamp(12rem, 18vw, 16rem);
-  border-radius:999px; isolation:isolate; left: 20%;
+  border-radius:999px; isolation:isolate; left: 28%;
 }
 .pf-ring{ position:absolute; inset:-3px; border-radius:999px;
   background: conic-gradient(from 220deg at 50% 50%, var(--brand), var(--brand-2));
