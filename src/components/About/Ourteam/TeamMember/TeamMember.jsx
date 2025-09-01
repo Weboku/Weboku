@@ -203,6 +203,17 @@ export default function TeamMember() {
               {availability && <span className="pf-badge hire">{availability}</span>}
               {since && <span className="pf-badge lite" title={`${since.years}+ years`}>{since.label}</span>}
             </div>
+
+            <div className="pf-hire-actions">
+                <a
+    className="pf-btn"
+    href="/contact"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Hire / Collaborate
+  </a>
+              </div>
           </div>
 
           <div className="pf-right">
