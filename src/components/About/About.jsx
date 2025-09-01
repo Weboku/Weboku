@@ -16,6 +16,7 @@ import { } from 'react-icons/fa';
 import { useLocalContext } from "../../context/LocalContext";
 import { motion } from "framer-motion";
 import WhyChooseSection from "../WhyChooseSection/WhyChooseSection";
+import Ourteam from "./Ourteam/Ourteam";
 
 const fadeUp = {
   initial: { opacity: 0, y: 40 },
@@ -86,6 +87,8 @@ const About = () => {
         </div>
       </motion.div>
 
+
+
       {/* Tabs Section */}
       <motion.div className="about-tabs" >
         <div className="tabs-text">
@@ -108,6 +111,8 @@ const About = () => {
           <img src="https://res.cloudinary.com/dqdngisww/image/upload/v1754989656/vector-organic-flat-people-business-training-illustration-flat-illustration_787500-5793_lfpxgl.jpg" alt="tab" />
         </div>
       </motion.div>
+
+      <Ourteam />
 
       {/* Banner */}
       <motion.div className="about-banner" initial={{ opacity: 0, y: 40 }}

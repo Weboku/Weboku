@@ -1,7 +1,7 @@
 
 
 .about-page {
-
+  overflow-y: hidden;
   color: #1e293b;
   overflow-x: hidden;
   /* overflow-x: hidden; */

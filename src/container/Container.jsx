@@ -36,6 +36,8 @@ import ManageAdmin from "../Admin/ManageAdmin/ManageAdmin";
 import Blogs from "../components/Blogs/Blogs";
 import Postpage from "../components/Blogs/Postpage/Postpage";
 import ContactFormPopup from "../components/ContactFormPopup/ContactFormPopup";
+import TeamMember from "../components/About/Ourteam/TeamMember/TeamMember";
+import Ourteam from "../components/About/Ourteam/Ourteam";
 
 const ScrollToTop = () => {
   const location = useLocation();
@@ -90,6 +92,8 @@ const Container = () => {
             <Route path="/services/:serviceId" element={<ServicePage />} />
             <Route path="/services/ads/:adsid" element={<AdsIllustration />} />
             <Route path="/about" element={<About />} />
+            <Route path="/about/team" element={<Ourteam/>} />
+               <Route path="/about/team/:name" element={<TeamMember/>} />
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/blogs/:category/:slug" element={<Postpage />} />
             <Route path="/contact" element={<Contact />} />
