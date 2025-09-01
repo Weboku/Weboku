@@ -67,7 +67,7 @@ bio: "Experienced project leader and co-founder, guiding teams in content creati
     designation: "Full Stack Web Developer",
     bio: "Full Stack Web Developer with a passion for crafting scalable, user-friendly applications and managing complete end-to-end development workflows.",
     email: "akashdas@weboku.com", // update if needed
-    employmentType: "contractor",
+    employmentType: "full_time",
     workingSince: "2025-08-15",
     status: "active",
     photo:
@@ -92,35 +92,5 @@ bio: "Experienced project leader and co-founder, guiding teams in content creati
       "Tailwind CSS",
       "UI/UX",
     ]
-  },
-  {
-    __slug: "kavya-nair",
-    name: "Kavya Nair",
-    role: "UX Designer",
-    designation: "UX Designer",
-    bio: "Turns complexity into simple, beautiful flows.",
-    email: "kavya@example.com",
-    employmentType: "intern",
-    workingSince: "2024-05-01",
-    status: "active",
-    photo:
-      "https://images.unsplash.com/photo-1541214113241-7f4bfaad6e22?q=80&w=480&auto=format&fit=crop",
-    socials: { linkedin: "#" },
-    skills: "UX, Wireframing, Prototyping",
-  },
-  {
-    __slug: "dev-malik",
-    name: "Dev Malik",
-    role: "Data Analyst",
-    designation: "Data Analyst",
-    bio: "Finds insights in results and boosts learning outcomes.",
-    email: "dev@example.com",
-    employmentType: "full_time",
-    workingSince: "2019-09-01",
-    status: "inactive",
-    photo:
-      "https://images.unsplash.com/photo-1546456073-6712f79251bb?q=80&w=480&auto=format&fit=crop",
-    socials: { linkedin: "#", github: "#" },
-    skills: ["SQL", "Visualization", "Experimentation"],
-  },
+  }
 ];
