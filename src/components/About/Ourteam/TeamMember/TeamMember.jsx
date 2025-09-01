@@ -198,10 +198,10 @@ export default function TeamMember() {
 
             {/* availability / status */}
             <div className="pf-badges">
-              {/* {employment && <span className="pf-badge">{employment}</span>} */}
+              {employment && <span className="pf-badge">{employment}</span>}
               {status && <span className={`pf-badge ${member.status === "active" ? "ok" : "muted"}`}>{status}</span>}
               {availability && <span className="pf-badge hire">{availability}</span>}
-              {/* {since && <span className="pf-badge lite" title={`${since.years}+ years`}>{since.label}</span>} */}
+              {since && <span className="pf-badge lite" title={`${since.years}+ years`}>{since.label}</span>}
             </div>
           </div>
 
