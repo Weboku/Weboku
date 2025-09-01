@@ -53,7 +53,7 @@ export const teamData = [
     name: "Akash Kumar Das",
     role: "Full Stack Web Developer",
     designation: "Full Stack Web Developer",
-    bio: "Passionate and Creative Web Developer with experience in building and managing responsive Websites.",
+    bio: "Full Stack Web Developer with expertise in building and scaling modern web applications across full stack technologies.",
     email: "akashdas@weboku.com", // update if needed
     employmentType: "contractor",
     workingSince: "2025-08-15",
