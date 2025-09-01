@@ -186,7 +186,7 @@ const Ourteam = ({
               )}
 
               {/* Links (stop click bubbling so card doesn't navigate) */}
-              {(social.linkedin || social.github || social.twitter || social.website || m.email || m.phone) && (
+              {/* {(social.linkedin || social.github || social.twitter || social.website || m.email || m.phone) && (
                 <div
                   className="socials"
                   onClick={(e) => e.stopPropagation()}
@@ -229,7 +229,7 @@ const Ourteam = ({
                     </a>
                   )}
                 </div>
-              )}
+              )} */}
             </article>
           );
         })}

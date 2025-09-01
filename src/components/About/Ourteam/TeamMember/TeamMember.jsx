@@ -162,7 +162,7 @@ export default function TeamMember() {
             </div>
 
             {/* quick contact */}
-            <div className="pf-contact">
+            {/* <div className="pf-contact">
   {member.email && (
     <a href={`mailto:${member.email}`} className="pf-icon-btn">
       <FontAwesomeIcon icon={faEnvelope} /> <span>Email</span>
@@ -193,15 +193,15 @@ export default function TeamMember() {
       <FontAwesomeIcon icon={faXTwitter} /> <span>Twitter</span>
     </a>
   )}
-</div>
+</div> */}
 
 
             {/* availability / status */}
             <div className="pf-badges">
-              {employment && <span className="pf-badge">{employment}</span>}
+              {/* {employment && <span className="pf-badge">{employment}</span>} */}
               {status && <span className={`pf-badge ${member.status === "active" ? "ok" : "muted"}`}>{status}</span>}
               {availability && <span className="pf-badge hire">{availability}</span>}
-              {since && <span className="pf-badge lite" title={`${since.years}+ years`}>{since.label}</span>}
+              {/* {since && <span className="pf-badge lite" title={`${since.years}+ years`}>{since.label}</span>} */}
             </div>
           </div>
 
@@ -360,7 +360,14 @@ export default function TeamMember() {
                 <p className="pf-hire-sub">Have a project or role in mind? Reach out for availability and collaboration.</p>
               </div>
               <div className="pf-hire-actions">
-                {member.email && <a className="pf-btn" target="_blank" rel="noopener" href={`${socials.linkedin}`}>Hire / Collaborate</a>}
+                <a
+    className="pf-btn"
+    href="/contact"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Hire / Collaborate
+  </a>
                 <a className="pf-btn pf-btn--ghost" href="/about/team">Back to Team</a>
               </div>
             </div>

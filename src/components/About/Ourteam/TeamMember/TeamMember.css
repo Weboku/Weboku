@@ -111,7 +111,7 @@
 .pf-icon-btn:hover{ background:#eef2f7; border-color:#dbe3ee; transform: translateY(-1px); }
 
 /* Badges */
-.pf-badges{ display:flex; flex-wrap:wrap; gap:.7rem; }
+.pf-badges{ display:flex; flex-wrap:wrap; justify-content: center; gap:.7rem; }
 .pf-badge{
   display:inline-block; font-size: clamp(1.25rem, 1.6vw, 1.35rem);
   padding:.36rem .9rem; border-radius:999px; font-weight:900;
